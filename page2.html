@@ -5,10 +5,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Про компанії</title>
+    <link rel="stylesheet" type="text/css" href="styles/css/main.min.css" />
     <style>
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background-color: #e9f1f7;
+            background-color: #867e8675;
             color: #333;
             margin: 0;
             padding: 0;
@@ -33,7 +34,7 @@
         }
 
         .content {
-            padding: 20px;
+            padding: 100px;
             background-color: #fff;
             box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
             margin-bottom: 40px;
@@ -59,6 +60,25 @@
         .company p {
             margin: 10px 0;
         }
+                /* Styles for the gallery */
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            margin: 40px 0;
+        }
+
+        .gallery img {
+            width: 200px;
+            height: 200px;
+            object-fit: cover;
+            margin: 10px;
+            transition: transform 0.3s ease;
+        }
+
+        .gallery img:hover {
+            transform: scale(1.1);
+        }
 
         footer {
             background-color: #0056b3;
@@ -77,9 +97,37 @@
 </head>
 
 <body>
-    <header>
-        <h1>Про компанії</h1>
-    </header>
+<header class="header">
+    <div class="container">
+        <div class="header__content">
+            <a class="header__logo-link" href="#">
+                <img src="images/logo.png" alt="Logo" class="header__logo-image" />
+            </a>
+
+            <nav class="header__nav">
+                <ul class="header__navList">
+                    <li class="header__navItem">
+                        <a href="index.html" class="header__navLink">ГОЛОВНА</a>
+                    </li>
+
+                    <li class="header__navItem">
+                        <a href="page1.html" class="header__navLink">ПРОДУКТИ</a>
+                    </li>
+
+                    <li class="header__navItem">
+                        <a href="page2.html"  class="header__navLink">ПРО КОМПАНІЇ</a>
+                    </li>
+
+                    <li class="header__navItem">
+                        <a href="page3.html" class="header__navLink">КОНТАКТИ</a>
+                    </li>
+                </ul>
+            </nav>
+
+            <a href="#menu" class="header__menu"></a>
+        </div>
+    </div>
+</header>
 
     <div class="container">
         <div class="content">
@@ -93,7 +141,10 @@
                     ідеальним помічником для людей з обмеженою рухливістю та в небезпечних умовах.</p>
                 </div>
             </div>
-
+        <div class="gallery">
+            <img src="images1/honda.png" alt="Robot Gallery Image 1">
+            <img src="images1/honda1.jpg" alt="Robot Gallery Image 2">
+        </div>
             <div class="company">
                 <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ4_niYi6CxrV134cKgVbdXz5y3yzBhsnMPKQ&s"
                     alt="Boston Dynamics Logo">
@@ -106,6 +157,10 @@
                     ідеальним для досліджень та розробок передових робототехнічних програм.</p>
                 </div>
             </div>
+        <div class="gallery">
+            <img src="images1/boston.jpg" alt="Robot Gallery Image 1">
+            <img src="images1/boston1.jpg" alt="Robot Gallery Image 2">
+        </div>
 
             <div class="company">
                 <img src="https://pbs.twimg.com/profile_images/1162486340446932997/aRVBWNv5_400x400.png"
@@ -118,6 +173,10 @@
                     покращуючи взаємодію між людьми та технологіями.</p>
                 </div>
             </div>
+        <div class="gallery">
+            <img src="images1/softbank.jpg" alt="Robot Gallery Image 1">
+            <img src="images1/softbank1.jpg" alt="Robot Gallery Image 2">
+        </div>
         </div>
     </div>
 

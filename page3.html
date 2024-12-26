@@ -5,10 +5,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Контактна інформація</title>
+    <link rel="stylesheet" type="text/css" href="styles/css/main.min.css" />
     <style>
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background-color: #e9f1f7;
+            background-color: #867e8675;
             color: #333;
             margin: 0;
             padding: 0;
@@ -33,7 +34,7 @@
         }
 
         .content {
-            padding: 20px;
+            padding: 70px;
             background-color: #fff;
             box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
             margin-bottom: 40px;
@@ -87,9 +88,37 @@
 </head>
 
 <body>
-    <header>
-        <h1>Контакта інформація</h1>
-    </header>
+<header class="header">
+    <div class="container">
+        <div class="header__content">
+            <a class="header__logo-link" href="#">
+                <img src="images/logo.png" alt="Logo" class="header__logo-image" />
+            </a>
+
+            <nav class="header__nav">
+                <ul class="header__navList">
+                    <li class="header__navItem">
+                        <a href="index.html" class="header__navLink">ГОЛОВНА</a>
+                    </li>
+
+                    <li class="header__navItem">
+                        <a href="page1.html"  class="header__navLink">ПРОДУКТИ</a>
+                    </li>
+
+                    <li class="header__navItem">
+                        <a href="page2.html"  class="header__navLink">ПРО КОМПАНІЇ</a>
+                    </li>
+
+                    <li class="header__navItem">
+                        <a href="page3.html" class="header__navLink">КОНТАКТИ</a>
+                    </li>
+                </ul>
+            </nav>
+
+            <a href="#menu" class="header__menu"></a>
+        </div>
+    </div>
+</header>
 
     <div class="container">
         <div class="content">
