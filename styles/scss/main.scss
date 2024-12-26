@@ -112,7 +112,7 @@ img {
 	}
 
 	&__body {
-		min-width: 320px;
+		min-width: 520px;
 		font-family: 'Inter', sans-serif;
 		background-color: #fff;
 	}
@@ -154,11 +154,11 @@ img {
 // #region main styles
 
 .header {
-  position: fixed;
+  position:fixed;
 	top: 0;
 	left: 0;
 	right: 0;
-  padding-block: 24px;
+  padding-block: 4px;
   z-index: 1;
   background-color: rgba(138, 144, 255, 0.8);
 
